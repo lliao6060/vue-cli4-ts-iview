@@ -14,7 +14,7 @@ npm Ctrl+Shift+V
 2. install `iview-loader`
 
 ```
-npm install iview --dave-dev
+npm install iview-loader --dave-dev
 ```
 
 3. edit `vue.config.js`
