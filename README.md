@@ -100,5 +100,24 @@ Vue.use(iview)
 
 就可以開心使用了
 
+
+#### 使用webpack覆蓋樣式
+  在vue中使用iview組件庫經常發現自己寫的樣式沒有生效，被iview覆蓋
+  1. 我們要把樣式寫在scss中，並且去掉scoped。
+  2. 加上多層div,防止出現覆蓋其他頁面樣式的問題。
+
+```javascript
+<style lang="scss">
+  .test-wrapper {
+    .test-inner {
+      .ivu-card-body {
+        padding: 15px;
+      }
+    }
+  }
+</style>
+```
+
 ### 參考
-See [here](https://blog.csdn.net/u013843183/article/details/80455373).
+- [配置](https://blog.csdn.net/u013843183/article/details/80455373)
+- [css覆蓋](https://zeng-cy.blog.csdn.net/article/details/103169596?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2.no_search_link)
